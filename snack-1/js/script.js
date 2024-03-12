@@ -10,7 +10,7 @@ let userNumber = parseInt(prompt('Dammi un numero'));
     }
     //altrimenti stampo il numero successivo
     else{
-        userNumber = userNumber + 1;
+        userNumber +=  + 1;
         console.log(userNumber);
     }
     
