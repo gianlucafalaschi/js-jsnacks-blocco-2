@@ -11,20 +11,19 @@ const arraySize = numbersArray.length;
 for(let i = 0; i < arraySize; i++) {
     let thisNumber = numbersArray[i];
     //controllo se i numeri sono dispari
-    //se sono dispari li metto nel div rosso
+        //se sono dispari li metto nel div rosso
     if(thisNumber % 2 !== 0) {
         console.log('il numero è dispari e va nel div rosso', thisNumber);
         let redText = document.querySelector('#red-text');
         redText.innerHTML += (thisNumber + ' ');
     } 
-    //altrimenti li metto nel div verde
+      //altrimenti li metto nel div verde
       else {
         console.log('il numero è pari e va nel div verde', thisNumber);
+        let greenText = document.querySelector('#green-text');
+        greenText.innerHTML += (thisNumber + ' ');
       }  
         
 }
 
-// STAMPO NELL'ID ROSSO I NUMERI PARI 
-
-// STAMPO NELL'ID VERDE I NUMERI DISPARI
 
