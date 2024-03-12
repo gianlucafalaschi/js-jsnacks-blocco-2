@@ -15,7 +15,7 @@ for(let i = 0; i < arraySize; i++) {
     if(thisNumber % 2 !== 0) {
         console.log('il numero è dispari e va nel div rosso', thisNumber);
         let redText = document.querySelector('#red-text');
-        redText.innerHTML = thisNumber;
+        redText.innerHTML += (thisNumber + ' ');
     } 
     //altrimenti li metto nel div verde
       else {
