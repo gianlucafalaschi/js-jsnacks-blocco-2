@@ -13,13 +13,13 @@ for(let i = 0; i < arraySize; i++) {
     //controllo se i numeri sono dispari
         //se sono dispari li metto nel div rosso
     if(thisNumber % 2 !== 0) {
-        console.log('il numero è dispari e va nel div rosso', thisNumber);
+        //console.log('il numero è dispari e va nel div rosso', thisNumber);
         let redText = document.querySelector('#red-text');
         redText.innerHTML += (thisNumber + ' ');
     } 
       //altrimenti li metto nel div verde
       else {
-        console.log('il numero è pari e va nel div verde', thisNumber);
+        //console.log('il numero è pari e va nel div verde', thisNumber);
         let greenText = document.querySelector('#green-text');
         greenText.innerHTML += (thisNumber + ' ');
       }  
