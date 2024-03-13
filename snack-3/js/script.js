@@ -6,7 +6,8 @@
 let numbersArray = [20, 33, 44, 55, 100, 105, 99, 120, 1000, 3, 7];
 // creo una costante per il numero di elementi dell'array
 const arraySize = numbersArray.length;
-
+let redText = document.querySelector('#red-text');
+let greenText = document.querySelector('#green-text');
 // scorro tutto gli elementi dell'array 
 for(let i = 0; i < arraySize; i++) {
     let thisNumber = numbersArray[i];
@@ -14,16 +15,17 @@ for(let i = 0; i < arraySize; i++) {
         //se sono dispari li metto nel div rosso
     if(thisNumber % 2 !== 0) {
         //console.log('il numero è dispari e va nel div rosso', thisNumber);
-        let redText = document.querySelector('#red-text');
+        
         redText.innerHTML += (thisNumber + ' ');
     } 
       //altrimenti li metto nel div verde
       else {
         //console.log('il numero è pari e va nel div verde', thisNumber);
-        let greenText = document.querySelector('#green-text');
+        
         greenText.innerHTML += (thisNumber + ' ');
       }  
         
 }
 
 
+ 
